@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Form Data Mahasiswa</title>
+
+    <style>
+        /* CSS untuk halaman */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f4f7;
+            margin: 0;
+            padding: 40px;
+        }
+
+        /* Kotak form */
+        .container {
+            width: 500px;
+            margin: auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 25px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 7px;
+        }
+
+        /* Input text dan password */
+        input[type="text"],
+        input[type="password"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #bbb;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        /* Radio dan checkbox */
+        .option {
+            margin: 8px 0;
+        }
+
+        .option label {
+            display: inline;
+            font-weight: normal;
+            margin: 0;
+        }
+
+        /* Tombol submit */
+        input[type="submit"] {
+            width: 100%;
+            margin-top: 25px;
+            padding: 12px;
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #1d4ed8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Form Data Mahasiswa</h1>
+
+        <form action="#" method="post">
+
+            <!-- TEXT -->
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" name="nama"
+                   placeholder="Masukkan nama lengkap">
+
+            <!-- PASSWORD -->
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password"
+                   placeholder="Masukkan password">
+
+            <!-- TEXTAREA -->
+            <label for="alamat">Alamat</label>
+            <textarea id="alamat" name="alamat"
+                      placeholder="Masukkan alamat lengkap"></textarea>
+
+            <!-- RADIO BUTTON -->
+            <label>Jenis Kelamin</label>
+
+            <div class="option">
+                <input type="radio" id="laki" name="jenis_kelamin" value="Laki-laki">
+                <label for="laki">Laki-laki</label>
+            </div>
+
+            <div class="option">
+                <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
+                <label for="perempuan">Perempuan</label>
+            </div>
+
+            <!-- CHECKBOX -->
+            <label>Hobi</label>
+
+            <div class="option">
+                <input type="checkbox" id="coding" name="hobi" value="Coding">
+                <label for="coding">Coding</label>
+            </div>
+
+            <div class="option">
+                <input type="checkbox" id="musik" name="hobi" value="Musik">
+                <label for="musik">Musik</label>
+            </div>
+
+            <div class="option">
+                <input type="checkbox" id="olahraga" name="hobi" value="Olahraga">
+                <label for="olahraga">Olahraga</label>
+            </div>
+
+            <!-- SELECT OPTION -->
+            <label for="jurusan">Pilih Jurusan</label>
+
+            <select id="jurusan" name="jurusan">
+                <option value="">-- Pilih Jurusan --</option>
+                <option value="teknologi_informasi">Teknologi Informasi</option>
+                <option value="ilmu_komputer">Ilmu Komputer</option>
+                <option value="teknik_elektro">Teknik Elektro</option>
+                <option value="teknik_mesin">Teknik Mesin</option>
+                <option value="manajemen">Manajemen</option>
+            </select>
+
+            <!-- SUBMIT -->
+            <input type="submit" value="Kirim Data">
+
+        </form>
+
+    </div>
+
+</body>
+</html>
